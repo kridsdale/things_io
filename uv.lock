@@ -14,12 +14,11 @@ wheels = [
 [[package]]
 name = "things-cli"
 version = "0.2.1"
-source = { registry = "https://pypi.org/simple" }
+source = { git = "https://github.com/kridsdale/things-cli.git#34aa7eb6f2e7cbd72e90a33b3d9b13a447abc707" }
 dependencies = [
     { name = "argcomplete" },
     { name = "things-py" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b0/97/97d2d48a2f892ab856b63db9f71d6d1021ba72bdc0abdaa421c46d8ff3fe/things-cli-0.2.1.tar.gz", hash = "sha256:2149f952af02842959912752e97a1df139f6fad0f64c3e881c6251cb468c3221", size = 9736, upload-time = "2023-05-23T06:01:17.069Z" }
 
 [[package]]
 name = "things-io"
@@ -32,12 +31,11 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "things-cli", specifier = ">=0.2.1" },
-    { name = "things-py", specifier = ">=1.0.1" },
+    { name = "things-cli", git = "https://github.com/kridsdale/things-cli.git" },
+    { name = "things-py", git = "https://github.com/kridsdale/things.py.git" },
 ]
 
 [[package]]
 name = "things-py"
 version = "1.0.1"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/8a/f7/7ca01abf3927ed680688e2ce4c608f0c252dc224134ca2b1f04940db0efd/things_py-1.0.1.tar.gz", hash = "sha256:6d760727e57c0cfb85f18a63b36459287573f7d7c0442874a76d4ef38b92089d", size = 30360, upload-time = "2026-02-28T22:23:41.197Z" }
+source = { git = "https://github.com/kridsdale/things.py.git#1f679a6f2ab639bff3fc48d20e2b6acdd7eb0e68" }

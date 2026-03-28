@@ -5,6 +5,6 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "things-cli>=0.2.1",
-    "things-py>=1.0.1",
+    "things-cli @ git+https://github.com/kridsdale/things-cli.git",
+    "things-py @ git+https://github.com/kridsdale/things.py.git",
 ]
