@@ -1,10 +1,26 @@
 [project]
 name = "things-io"
 version = "0.1.0"
-description = "Add your description here"
+description = "Claude skill CLI for reading and writing Things 3 data"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "things-cli @ git+https://github.com/kridsdale/things-cli.git",
     "things-py @ git+https://github.com/kridsdale/things.py.git",
 ]
+
+[project.scripts]
+things-io = "things_io.cli:main"
+
+[tool.uv]
+package = true
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["things_io"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
